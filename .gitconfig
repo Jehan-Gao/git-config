@@ -1,0 +1,11 @@
+[user]
+	email = xxxx
+	name = xxxx
+[alias]
+pxsh = "!f() { if [ -z $1 ];then currentBranch=`git rev-parse --abbrev-ref HEAD`; git push origin $currentBranch; fi }; f"
+pxll = "!f() { if [ -z $1 ];then currentBranch=`git rev-parse --abbrev-ref HEAD`; git pull origin $currentBranch; fi }; f"
+cb = "checkout -b"
+lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+st = "status"
+c = "checkout"
+can = "commit --amend --no-edit"
