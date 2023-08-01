@@ -9,3 +9,7 @@ lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgree
 st = "status"
 c = "checkout"
 can = "commit --amend --no-edit"
+
+# 配置指定目录下使用指定的用户名和邮箱
+[includeIf "gitdir:/Users/xxx/xxx/"]
+ path = .entconfig
